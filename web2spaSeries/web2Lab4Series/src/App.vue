@@ -22,6 +22,14 @@ import { RouterLink, RouterView } from 'vue-router';
 </template>
 
 <style scoped>
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px;
+  overflow-y: auto;
+}
 header {
   display: flex;
   align-items: center;

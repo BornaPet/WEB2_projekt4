@@ -41,6 +41,7 @@ div {
   background-color: #f8f9fa;
   text-align: center;
   font-family: 'Arial', sans-serif;
+
 }
 
 h1 {
