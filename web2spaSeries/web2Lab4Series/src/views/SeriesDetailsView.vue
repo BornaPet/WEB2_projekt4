@@ -43,7 +43,7 @@ export default {
     };
 
     onMounted(() => {
-      seriesStore.fetchSeries(); // Dohvati serije iz localStorage-a ili Mocky-a
+      seriesStore.fetchSeries();
     });
 
     return { series, markAsWatched };
@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style scoped>
-/* Glavni container koji centrira sadržaj */
 div {
   display: flex;
   flex-direction: column;
@@ -64,28 +63,24 @@ div {
   text-align: center;
 }
 
-/* Glavni naslov stranice */
 h1 {
   font-size: 2.5rem;
   color: #343a40;
   margin-bottom: 1.5rem;
 }
 
-/* Podnaslov (ime serije) */
 h2 {
   font-size: 2rem;
   color: #007bff;
   margin-bottom: 1rem;
 }
 
-/* Tekstualni detalji o seriji */
 p {
   font-size: 1.125rem;
   color: #495057;
   margin-bottom: 1rem;
 }
 
-/* Gumb za označavanje serije kao pogledane */
 button {
   padding: 0.75rem 1.5rem;
   background-color: #28a745;
@@ -101,7 +96,6 @@ button:hover {
   background-color: #218838;
 }
 
-/* Link za povratak na početnu */
 router-link {
   display: inline-block;
   margin-top: 2rem;
