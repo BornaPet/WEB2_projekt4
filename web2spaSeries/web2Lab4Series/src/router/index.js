@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/SeriesDetailsView.vue'),
     },
     {
+      path: '/edit/:id',
+      name: 'edit-series',
+      component: () => import('../views/EditSeries.vue'),
+    },
+    {
       path: '/series',
       name: 'series-details',
       component: () => import('../views/SeriesView.vue'),

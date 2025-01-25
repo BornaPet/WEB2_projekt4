@@ -8,6 +8,9 @@
       <p><strong>Status:</strong> {{ series.watched ? 'Pogledano' : 'Nije pogledano' }}</p>
 
       <MarkAsWatchedButton v-if="!series.watched" @watched="markAsWatched" />
+
+            <router-link :to="`/edit/${series.id}`">Uredi seriju</router-link>
+
     </div>
     <div v-else>
       <p>Serija nije pronađena!</p>
@@ -57,7 +60,7 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Puni ekran */
+  height: 100vh;
   padding: 2rem;
   background-color: #f8f9fa;
   text-align: center;
